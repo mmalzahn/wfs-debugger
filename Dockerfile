@@ -9,6 +9,6 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-COPY scripts/*.sh /app
+COPY debug.sh /app/debug.sh
 RUN chmod +x /app/*.sh
 CMD [ "/app/debug.sh" ]
